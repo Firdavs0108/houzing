@@ -4,6 +4,8 @@ import { Outlet, useNavigate} from 'react-router-dom'
 import { Container, Wrapper,Section,Logo,Link,Main } from './style'
 import logoImg from '../../assets/icons/logo.svg'
 import { navbar } from '../../utils/navbar'
+import Button from '../Generic/Button'
+
 
 const Navbar = () => {
   const navigate = useNavigate()
@@ -12,12 +14,12 @@ const Navbar = () => {
       <Main>
             <Wrapper>
                   <Section onClick={()=>navigate('/home') } logo>
-                    <Logo  src={logoImg}/> <h3>Houzinggg</h3> 
+                    <Logo  src={logoImg}/> <h3>Houzing</h3> 
                   </Section>
                   <Section>
                     {
-                      navbar.map(({title, path}, index) => {
-                        return (
+                      navbar.map(({title, path, hidden}, index) => {
+                        return !hidden &&  (
                         <Link className={({isActive}) => isActive && 'active'} 
                         key={index} 
                         to={path}>
@@ -27,7 +29,7 @@ const Navbar = () => {
                         ) })}
                   </Section>
                   <Section>
-                    <button>Sign in</button>
+                    <Button onClick={() => navigate('/signin')} type='dark'>Sign in</Button>
                   </Section>
           </Wrapper>
       </Main>
