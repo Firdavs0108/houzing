@@ -14,6 +14,7 @@ display: flex;
 justify-content: center;
 background: var(--colorPrimary);
 
+
 `
 
 const Wrapper = styled.div`

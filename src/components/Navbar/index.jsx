@@ -12,7 +12,7 @@ const Navbar = () => {
       <Main>
             <Wrapper>
                   <Section onClick={()=>navigate('/home') } logo>
-                    <Logo  src={logoImg}/> <h3>Houzing</h3> 
+                    <Logo  src={logoImg}/> <h3>Houzinggg</h3> 
                   </Section>
                   <Section>
                     {
