@@ -40,6 +40,7 @@ const Container = styled.input`
   width: ${({ width }) => (width ? `${width}px` : '100%')};
   outline: none;
   border: 1px solid #E6E9EC;
+  padding-left: ${({icon}) => (icon ? '35px' : '20px')} ;
   /* cursor: pointer; */
   /* ${({ type }) => getType({ type })}; */
 
@@ -49,4 +50,22 @@ const Container = styled.input`
 
 `;
 
-export { Container };
+const Wrapper = styled.div`
+position: relative;
+display: flex;
+align-items: center;
+
+width: ${({ width }) => (width ? `${width}px` : '100%')};
+
+`
+
+const Icon = styled.div`
+position: absolute;
+left: 10px;
+
+`
+
+
+
+
+export { Container, Wrapper, Icon};

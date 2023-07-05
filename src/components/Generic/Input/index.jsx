@@ -1,7 +1,7 @@
 
 
 import React from 'react'
-import { Container } from './style'
+import { Container, Wrapper, Icon } from './style'
 
 const Button = ({type, 
   onChange, 
@@ -11,20 +11,25 @@ const Button = ({type,
   name,
   width,
   height,
+  icon,
 
 }) => {
   return (
-    <Container 
-    placeholder={placeholder} 
-    name={name}
-    value={value}
-    defaultValue={defaultValue}
-    onChange={onChange} 
-    type={type} 
-    width={width}
-    height={height}
-    
-    />
+    <Wrapper>
+      <Icon>{icon}</Icon>
+      <Container 
+         
+         icon={icon}
+         placeholder={placeholder} 
+         name={name}
+         value={value}
+         defaultValue={defaultValue}
+         onChange={onChange} 
+         type={type} 
+         width={width}
+         height={height}
+      />
+    </Wrapper>
       
   
   )

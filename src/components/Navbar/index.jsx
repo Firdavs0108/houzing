@@ -2,9 +2,10 @@
 import React from 'react'
 import { Outlet, useNavigate} from 'react-router-dom'
 import { Container, Wrapper,Section,Logo,Link,Main } from './style'
-import logoImg from '../../assets/icons/logo.svg'
+import logoImg from '../../assets/img/logo.png'
 import { navbar } from '../../utils/navbar'
 import Button from '../Generic/Button'
+import Filter from '../Filter/index'
 
 
 const Navbar = () => {
@@ -33,6 +34,7 @@ const Navbar = () => {
                   </Section>
           </Wrapper>
       </Main>
+      <Filter/>
        <Outlet/>
     </Container>
   )
