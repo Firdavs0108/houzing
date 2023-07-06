@@ -22,8 +22,6 @@ const Search = styled(search)``
 const Settings = styled(settings)`
 
 `
-
-
 const MenuWrapper = styled.div`
     padding: 30px;
     background: white;
