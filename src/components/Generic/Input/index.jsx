@@ -1,9 +1,11 @@
 
 
-import React from 'react'
+import React, {forwardRef} from 'react'
 import { Container, Wrapper, Icon } from './style'
 
-const Button = ({type, 
+
+const Input = forwardRef(({
+  type,
   onChange, 
   defaultValue, 
   value, 
@@ -12,13 +14,16 @@ const Button = ({type,
   width,
   height,
   icon,
+}, 
 
-}) => {
-  return (
-    <Wrapper>
+ref
+
+) => {
+  return(
+        <Wrapper>
       <Icon>{icon}</Icon>
       <Container 
-         
+         ref={ref}
          icon={icon}
          placeholder={placeholder} 
          name={name}
@@ -31,8 +36,7 @@ const Button = ({type,
       />
     </Wrapper>
       
-  
   )
-}
+})
 
-export default Button
+export default Input

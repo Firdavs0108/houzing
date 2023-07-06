@@ -22,5 +22,20 @@ const Search = styled(search)``
 const Settings = styled(settings)``
 
 
+const MenuWrapper = styled.div`
+    padding: 30px;
+    background: white;
+    border: 1px solid #e6e9ec;
+`
+const Section = styled.div`
 
-export{Container, Icons, Home, Search, Settings}
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+`
+
+
+
+
+
+export{Container, Icons, Home, Search, Settings, MenuWrapper, Section}

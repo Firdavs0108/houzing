@@ -67,5 +67,4 @@ left: 10px;
 
 
 
-
-export { Container, Wrapper, Icon};
+export { Container, Wrapper, Icon, };
