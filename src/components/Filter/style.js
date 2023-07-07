@@ -18,9 +18,11 @@ const Container = styled.div`
 const Icons = styled.div``
 
 const Home = styled(home)``
-const Search = styled(search)``
+const Search = styled(search)`
+    padding-right: 4px;
+`
 const Settings = styled(settings)`
-
+    padding-right: 4px;
 `
 const MenuWrapper = styled.div`
     padding: 30px;
