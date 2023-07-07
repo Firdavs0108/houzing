@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container,Content,Img, Details } from './style'
+import { Container,Content,Img, Details, Icons } from './style'
 import noimg from '../../assets/img/noimg.jpeg'
 
 
@@ -17,10 +17,18 @@ import noimg from '../../assets/img/noimg.jpeg'
                      <div className="subTitle">{title || 'New Apartment Nice Wiew'}</div>
                      <div className="info">Quincy St, Brooklyn, NY, USA</div>
                      <Details>
-                        <Details.Item>1</Details.Item>
-                        <Details.Item>2</Details.Item>
-                        <Details.Item>3</Details.Item>
-                        <Details.Item>4</Details.Item>
+                        <Details.Item>
+                              <Icons.Bed/>
+                        </Details.Item>
+                        <Details.Item>
+                             <Icons.Bath/>
+                        </Details.Item>
+                        <Details.Item>
+                              <Icons.Car/>
+                        </Details.Item>
+                        <Details.Item>
+                              <Icons.Rurel/>
+                        </Details.Item>
                      </Details>
                   </Content>
           </Container>
