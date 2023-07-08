@@ -3,6 +3,7 @@ import React from 'react'
 import { Container } from './style'
 import Carousel from '../Carousel'
 import HouseCard from '../HouseCard';
+import Properties from '../Properties'
 
 
 const Home = () => {
@@ -10,7 +11,8 @@ const Home = () => {
     <Container>
       <Carousel/>
       <HouseCard/>
-    </Container>
+      <Properties/>
+      </Container>
   );
 }
 

@@ -38,6 +38,7 @@ import img2 from '../../assets/img/home2.png'
             <Content>
               <Content.Title>Skyper Pool Partment</Content.Title>
               <Content.Desc>112 Glenwood Ave Hyde Park, Boston, MA</Content.Desc>
+              
               <Content.Price>$5,250 / month</Content.Price>
             </Content>
             <Arrow data-name='left' onClick={onMove}  left/>
